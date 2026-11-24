@@ -23,9 +23,9 @@
     };
 
     var UPSCALE_MAP = {
-        1: { label: 'OFF',  vf: null                      },
-        2: { label: '2K',   vf: 'scale=2560:1440:flags=lanczos' },
-        4: { label: '4K',   vf: 'scale=3840:2160:flags=lanczos' }
+        1: { label: 'OFF', vf: null },
+        2: { label: '2x',  vf: 'scale=iw*2:ih*2:flags=lanczos' },
+        4: { label: '4x',  vf: 'scale=iw*4:ih*4:flags=lanczos' }
     };
 
     function init() {
